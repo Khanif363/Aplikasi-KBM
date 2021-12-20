@@ -22,5 +22,9 @@ class DatabaseSeeder extends Seeder
             'password'  => Hash::make('1234'),
             'role'      => 'Admin'
         ]);
+
+        Role::create([
+            'role'      => 'Siswa'
+        ]);
     }
 }
