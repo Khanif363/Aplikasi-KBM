@@ -2,6 +2,7 @@
 
 namespace App\Console;
 
+use App\Models\Alpha;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -24,7 +25,11 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        $alpha = Alpha::all();
         // $schedule->command('inspire')->hourly();
+        $schedule->call(function () {
+            $alpha->delete();
+        })->daily();
     }
 
     /**
