@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         Kelas::create([
-            'kelas'     => '1 SMP'
+            'kelas'     => '2 SMP'
         ]);
 
 
