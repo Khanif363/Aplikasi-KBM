@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Kelas;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
@@ -22,6 +23,10 @@ class DatabaseSeeder extends Seeder
         //     'password'  => Hash::make('1234'),
         //     'role'      => 'Admin'
         // ]);
+
+        Kelas::create([
+            'kelas'     => '1 SMP'
+        ]);
 
 
     }
