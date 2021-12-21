@@ -262,7 +262,7 @@
 								<a class="dropdown-item" href="/edit-profile/{{ Auth::user()->name }}">Account Setting</a>
 								<div class="dropdown-divider"></div>
 								{{-- <a class="dropdown-item" href="{{ Route('logout') }}">Logout</a> --}}
-								<a class="dropdown-item" href="{{ route('logout') }}"
+								<a class="dropdown-item" href="{{ route('landing') }}"
 										onclick="event.preventDefault();
 														document.getElementById('logout-form').submit();">
 											{{ __('Keluar') }}

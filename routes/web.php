@@ -86,7 +86,7 @@ Route::get('/kirim-tugas', function () {
 });
 // // Route::get('/contact', [ContactForm::class,'view']);
 // Route::post('/contact-form', [ContactForm::class,'contactFormSubmit']);
-Route::get('/', [UserController::class,'demo']);
+Route::get('/', [UserController::class,'demo'])->name('landing');
 Route::get('/jadwal-1smp' ,[JadwalMapelController::class,'jadwal1SMP'])->name('jadwal1smp');
 Route::get('/jadwal-2smp' ,[JadwalMapelController::class,'jadwal2SMP'])->name('jadwal2smp');
 Route::get('/jadwal-3smp' ,[JadwalMapelController::class,'jadwal3SMP'])->name('jadwal3smp');
