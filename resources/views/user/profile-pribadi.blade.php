@@ -38,6 +38,12 @@
                             <div class="card-block">
                                 <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
                                 <div class="row">
+                                    @if (Auth::user()->role == 'Siswa')
+                                    <div class="col-sm-6">
+                                        <p class="m-b-10 f-w-600">NISN</p>
+                                        <h6 class="text-muted f-w-400">{{ Auth::user()->nisn }}</h6>
+                                    </div>
+                                    @endif
                                     <div class="col-sm-6">
                                         <p class="m-b-10 f-w-600">Email</p>
                                         <h6 class="text-muted f-w-400">{{ Auth::user()->email }}</h6>
