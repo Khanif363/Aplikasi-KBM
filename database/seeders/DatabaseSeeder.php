@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use App\Models\Kelas;
+use App\Models\Tanggal;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
