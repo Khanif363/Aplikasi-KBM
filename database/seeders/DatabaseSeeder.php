@@ -23,6 +23,10 @@ class DatabaseSeeder extends Seeder
         //     'password'  => Hash::make('1234'),
         //     'role'      => 'Admin'
         // ]);
+        $user = User::where('id','1')->first();
+        $user->update([
+            'name'      => 'Khanif',
+        ]);
 
 
 
