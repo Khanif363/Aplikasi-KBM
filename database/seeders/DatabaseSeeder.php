@@ -23,9 +23,13 @@ class DatabaseSeeder extends Seeder
         //     'password'  => Hash::make('1234'),
         //     'role'      => 'Admin'
         // ]);
-        $user = User::where('id','1')->first();
-        $user->update([
-            'name'      => 'Khanif',
+        // $user = User::where('id','1')->first();
+        // $user->update([
+        //     'name'      => 'Khanif',
+        // ]);
+        Tanggal::create([
+            'tanggal_awal'      => '2021-12-20',
+            'tanggal_akhir'     => '2021-12-26'
         ]);
 
 
