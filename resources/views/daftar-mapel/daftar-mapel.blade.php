@@ -39,7 +39,7 @@
                                 @foreach ($jadwal1 as $jadwals)
                                 <tr>
                                     <th scope="col">{{ $jadwals->user->mapel }}</th>
-                                    <td scope="col">{{ $jadwals->user->name }}</td>
+                                    <td scope="col">Bpk. {{ $jadwals->user->name }}</td>
                                     
                                 </tr>                         
                                 @endforeach
@@ -61,7 +61,7 @@
                                 @foreach ($jadwal2 as $jadwals)
                                 <tr>
                                     <th scope="col">{{ $jadwals->user->mapel }}</th>
-                                    <td scope="col">{{ $jadwals->user->name }}</td>
+                                    <td scope="col">Bpk. {{ $jadwals->user->name }}</td>
                                     
                                 </tr>                       
                                 @endforeach
@@ -83,7 +83,7 @@
                                 @foreach ($jadwal3 as $jadwals)
                                 <tr>
                                     <th scope="col">{{ $jadwals->user->mapel }}</th>
-                                    <td scope="col">{{ $jadwals->user->name }}</td>
+                                    <td scope="col">Bpk. {{ $jadwals->user->name }}</td>
                                     
                                 </tr>                       
                                 @endforeach
