@@ -24,9 +24,6 @@ class DatabaseSeeder extends Seeder
         //     'role'      => 'Admin'
         // ]);
 
-        Kelas::create([
-            'kelas'     => '3 SMP'
-        ]);
 
 
     }
