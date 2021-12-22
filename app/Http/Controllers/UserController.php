@@ -126,7 +126,7 @@ class UserController extends Controller
             'name'      => $request->name,
             'email'     => $request->email,
             'role'      => $request->role,
-            'Password'  => Hash::make($request->password),
+            'password'  => Hash::make($request->password),
         ]);
         return redirect()->back()->with('Success',"Berhasil menambahkan user!");
     }
