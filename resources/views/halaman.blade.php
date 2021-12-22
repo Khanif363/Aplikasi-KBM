@@ -166,14 +166,14 @@
                 <i class="bx bx-store-alt"></i>
                 <div>
                   <h5>Kemudahan dalam proses pengiriman</h5>
-                  <p>Seperti mengirim tugas ataupun mengirim pesan pertanyaan</p>
+                  <p>Seperti mengirim tugas ataupun mengirim pesan pertanyaan.</p>
                 </div>
               </li>
               <li>
                 <i class="bx bx-images"></i>
                 <div>
                   <h5>Kemudahan dalam proses pendataan</h5>
-                  <p>Baik pendataan siswa maupun file sekolah itu sendiri</p>
+                  <p>Baik pendataan siswa maupun guru.</p>
                 </div>
               </li>
             </ul>
