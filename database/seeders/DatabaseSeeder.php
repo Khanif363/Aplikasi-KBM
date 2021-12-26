@@ -28,11 +28,35 @@ class DatabaseSeeder extends Seeder
         // $user->update([
         //     'name'      => 'Khanif',
         // ]);
-        Tanggal::create([
-            'tanggal_awal'      => '2021-12-20',
-            'tanggal_akhir'     => '2021-12-26'
-        ]);
+        // Tanggal::create([
+        //     'tanggal_awal'      => '2021-12-20',
+        //     'tanggal_akhir'     => '2021-12-26'
+        // ]);
 
+        Hari::create([
+            'id'        => '1',
+            'hari'      => 'Senin'
+        ]);
+        Hari::create([
+            'id'        => '2',
+            'hari'      => 'Selasa'
+        ]);
+        Hari::create([
+            'id'        => '3',
+            'hari'      => 'Rabu'
+        ]);
+        Hari::create([
+            'id'        => '4',
+            'hari'      => 'Kamis'
+        ]);
+        Hari::create([
+            'id'        => '5',
+            'hari'      => 'Jumat'
+        ]);
+        Hari::create([
+            'id'        => '6',
+            'hari'      => 'Sabtu'
+        ]);
 
 
     }
