@@ -3,13 +3,13 @@
         <nav class="pull-left">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.themekita.com">
-                        ThemeKita
+                    <a class="nav-link" href="https://www.laravel.com">
+                        Aplikasi KBM
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        Help
+                        Copyright
                     </a>
                 </li>
                 <li class="nav-item">
@@ -20,7 +20,7 @@
             </ul>
         </nav>
         <div class="copyright ml-auto">
-            2018, made with <i class="fa fa-heart heart text-danger"></i> by <a href="https://www.themekita.com">ThemeKita</a>
+            2021, made with <i class="fa fa-heart heart text-danger"></i> by <a href="https://www.laravel.com">Laravel</a>
         </div>				
     </div>
 </footer>
