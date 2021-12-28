@@ -11,7 +11,7 @@
     </div>
 
     <div class="input-container ic2">
-      <input id="email" class="input" type="text" placeholder="Masukkan Email" />
+      <input hidden id="email" class="input" type="text" placeholder="Masukkan Email" value="{{ Auth::user()->email }}" />
       {{-- <div class="cut cut-short"></div> --}}
       {{-- <label for="email" class="placeholder">Email</> --}}
     </div>
