@@ -56,7 +56,7 @@ Route::get('/profile-2smp', [UserController::class,'profile2SMP'])->middleware('
 Route::get('/profile/{id}', [UserController::class,'profile'])->middleware('auth');
 Route::get('/profile-3smp', [UserController::class,'profile3SMP'])->middleware('auth');
 // https://youtu.be/L7EGD2V_Zj4 
-Auth::routes()->middleware('auth');
+Auth::routes();
 
 Route::get('/profile-pribadi/{name}', [UserController::class,'profilePribadi'])->name('profile')->middleware('auth');
 Route::get('/edit-profile/{name}',[UserController::class,'editProfile'])->middleware('auth');
