@@ -450,8 +450,8 @@
 	<!-- Datatables -->
 	<script src="../assets/js/plugin/datatables/datatables.min.js"></script>
 
-	<!-- Bootstrap Notify -->
-	<script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+	{{-- <!-- Bootstrap Notify -->
+	<script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script> --}}
 
 	<!-- jQuery Vector Maps -->
 	<script src="../assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
