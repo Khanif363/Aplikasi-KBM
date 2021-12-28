@@ -72,7 +72,7 @@
         <p class="alert alert-success alert-block">{{ $message }}</p>
     @enderror
     <div class="input-container ic2">
-      <input wire:model="email" id="email" class="input" type="text"  name="email" value="{{ Auth::user()->email }}" placeholder="Masukkan Email" />
+      <input wire:model="email" id="email" class="input" type="text"  name="email"  placeholder="Masukkan Email" />
       {{-- <div class="cut cut-short"></div>
       <label for="email" class="placeholder">Email</> --}}
     </div>
