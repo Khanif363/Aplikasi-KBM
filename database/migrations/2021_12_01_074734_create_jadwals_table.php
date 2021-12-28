@@ -19,9 +19,6 @@ class CreateJadwalsTable extends Migration
             $table->foreignId('kelas_id');
             $table->foreignId('waktu_id');
             $table->foreignId('hari_id');
-            // $table->string('kondisi');
-            // $table->time('awal');
-            // $table->time('akhir');
             $table->timestamps();
         });
     }
