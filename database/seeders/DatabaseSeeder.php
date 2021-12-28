@@ -34,30 +34,9 @@ class DatabaseSeeder extends Seeder
         //     'tanggal_akhir'     => '2021-12-26'
         // ]);
 
-        Hari::create([
-            'id'        => '1',
-            'hari'      => 'Senin'
-        ]);
-        Hari::create([
-            'id'        => '2',
-            'hari'      => 'Selasa'
-        ]);
-        Hari::create([
-            'id'        => '3',
-            'hari'      => 'Rabu'
-        ]);
-        Hari::create([
-            'id'        => '4',
-            'hari'      => 'Kamis'
-        ]);
-        Hari::create([
-            'id'        => '5',
-            'hari'      => 'Jumat'
-        ]);
-        Hari::create([
-            'id'        => '6',
-            'hari'      => 'Sabtu'
-        ]);
+
+        $Tanggal = Tanggal::where('id','2');
+        $Tanggal->delete();
 
 
     }
