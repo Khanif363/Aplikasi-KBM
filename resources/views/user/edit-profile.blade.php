@@ -15,7 +15,7 @@
           <div class="form-group">
             
             <label for="fullName">Nama Lengkap</label>
-            <input name="name" type="text" class="form-control" id="fullName" placeholder="Masukkan Nama Lengkap">
+            <input name="name" type="text" class="form-control" id="fullName" placeholder="Masukkan Nama Lengkap" value="{{ Auth::user()->name }}">
           </div>
         </div>
         @if (Auth::user()->role == 'Siswa')

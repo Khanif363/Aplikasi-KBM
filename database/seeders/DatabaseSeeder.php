@@ -33,10 +33,15 @@ class DatabaseSeeder extends Seeder
         //     'tanggal_awal'      => '2021-12-20',
         //     'tanggal_akhir'     => '2021-12-26'
         // ]);
+        $user = User::where('id','13');
+        $user->update([
+        'name'      => 'Amir Said Nur Fadilah',
+        ]);
 
-
-        $Tanggal = Tanggal::where('id','2');
-        $Tanggal->delete();
+        $user = User::where('id','12');
+        $user->update([
+        'name'      => 'Muhammad Basyier',
+        ]);
 
 
     }
