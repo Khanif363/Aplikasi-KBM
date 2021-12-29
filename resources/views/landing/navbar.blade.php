@@ -1,4 +1,4 @@
-<div class="main-header mt-0">
+<div class="main-header" style="margin-top: 0 !important">
 	<!-- Logo Header -->
 	<div class="logo-header" data-background-color="blue">
 		
