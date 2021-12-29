@@ -33,7 +33,7 @@
     <div class="d-flex justify-content-center align-items-center" style="padding-bottom: 100px;">
         <div class="row text-center">
             
-            <div class="col-4 jarakk d-flex justify-content-center">
+            <div class="col jarakk d-flex justify-content-center">
                 <div class="card ">
                     <div class="card-body">
                         <div class="card-sub">											
@@ -56,7 +56,7 @@
                 </div>
               </div>
 
-            <div class="col-4 jarakk d-flex justify-content-center">
+            <div class="col jarakk d-flex justify-content-center">
               <div class="card ">
                   <div class="card-body">
                       <div class="card-sub">											
@@ -79,7 +79,7 @@
               </div>
             </div>
 
-            <div class="col-4 jarakk d-flex justify-content-center">
+            <div class="col jarakk d-flex justify-content-center">
               <div class="card ">
                   <div class="card-body">
                       <div class="card-sub">											
@@ -104,7 +104,7 @@
               </div>
           </div>
 
-          <div class="col-4 jarakk d-flex justify-content-center">
+          <div class="col jarakk d-flex justify-content-center">
             <div class="card ">
                 <div class="card-body">
                     <div class="card-sub">											
@@ -129,7 +129,7 @@
             </div>
         </div>
 
-        <div class="col-4 jarakk d-flex justify-content-center">
+        <div class="col jarakk d-flex justify-content-center">
           <div class="card ">
               <div class="card-body">
                   <div class="card-sub">											
@@ -154,7 +154,7 @@
           </div>
       </div>
 
-      <div class="col-4 jarakk d-flex justify-content-center">
+      <div class="col jarakk d-flex justify-content-center">
         <div class="card ">
             <div class="card-body">
                 <div class="card-sub">											
