@@ -340,7 +340,7 @@
 
 	</style>
 
-{{-- @livewireStyles --}}
+@livewireStyles
 </head>
 <body>
 
@@ -561,5 +561,5 @@
 		});
 	</script> --}}
 
-{{-- @livewireScripts --}}
+@livewireScripts
 </body>
