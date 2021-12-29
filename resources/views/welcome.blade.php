@@ -340,7 +340,7 @@
 
 	</style>
 
-@livewireStyles
+{{-- @livewireStyles --}}
 </head>
 <body>
 
@@ -426,7 +426,7 @@
 	</div>
 	<!-- End Custom template -->
 	</div>
-	<script src="../assets/js/core/jquery.3.2.1.min.js"></script>
+	{{-- <script src="../assets/js/core/jquery.3.2.1.min.js"></script>
 	<script src="../assets/js/core/popper.min.js"></script>
 	<script src="../assets/js/core/bootstrap.min.js"></script>
 
@@ -455,7 +455,7 @@
 
 	<!-- jQuery Vector Maps -->
 	<script src="../assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
-	<script src="../assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+	<script src="../assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script> --}}
 
 	<!-- Sweet Alert -->
 	<script src="../assets/js/plugin/sweetalert/sweetalert.min.js"></script>
@@ -561,5 +561,5 @@
 		});
 	</script> --}}
 
-@livewireScripts
+{{-- @livewireScripts --}}
 </body>
