@@ -550,7 +550,7 @@
 
 		@include('landing.footer')
 	</div>
-	<div class="custom-template">
+	{{-- <div class="custom-template">
 		<div class="title">Settings</div>
 		<div class="custom-content">
 			<div class="switcher">
@@ -618,7 +618,7 @@
 		<div class="custom-toggle">
 			<i class="flaticon-settings"></i>
 		</div>
-	</div>
+	</div> --}}
 	<!-- End Custom template -->
 	</div>
 	<script src="../assets/js/core/jquery.3.2.1.min.js"></script>
