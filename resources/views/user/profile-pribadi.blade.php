@@ -11,7 +11,7 @@
                         <strong>{{ $message }}</strong>
                     </div>
                 @endif
-                <div class="card user-card-full card-responsive card-center" style="width: 275px">
+                <div class="card user-card-full card-responsive text-center" style="width: 250px">
                     <div class="row m-l-0 m-r-0">
                         
                         <div class="col-sm-4 bg-c-lite-green user-profile">
