@@ -17,12 +17,12 @@
                         <div class="col-sm-4 bg-c-lite-green user-profile">
                             <div class="card-block text-center text-wprofile.htmlhite">
                                 <div class="m-b-25"> 
-                                    <img src="https://drive.google.com/file/d/1OXqqex5dvdIvO2bbV5RCploV4xfJ3tJu/view?usp=sharing" class="img-radius" alt="User-Profile-Image"> 
-                                    {{-- @if (Auth::user()->name  == '')
+                                    {{-- <img src="https://drive.google.com/file/d/1OXqqex5dvdIvO2bbV5RCploV4xfJ3tJu/view?usp=sharing" class="img-radius" alt="User-Profile-Image">  --}}
+                                    @if (Auth::user()->name  == '')
                                     <img src="https://ui-avatars.com/api/?name={{ Auth::user()->username }}" alt="..."  class=" rounded-circle foto-profile" rounded-circle alt="User-Profile-Image">
                                     @elseif (Auth::user()->name  != '')
                                     <img src="https://ui-avatars.com/api/?name={{ Auth::user()->name }}" alt="..."  class=" rounded-circle foto-profile" rounded-circle alt="User-Profile-Image">
-                                    @endif --}}
+                                    @endif
                                 </div>
                                 <h6 class="f-w-600">{{ Auth::user()->name }}</h6>
                                 
