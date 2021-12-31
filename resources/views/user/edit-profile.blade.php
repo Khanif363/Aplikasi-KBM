@@ -4,7 +4,7 @@
   <div class="container mt-5 mb-5" style="max-width: 80%">
     <div class="card h-100">
     <div class="card-body">
-      <form action="/edit/{{ Auth::user()->name }}" method="POST">
+      <form action="/edit/{{ Auth::user()->name }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
       <div class="row gutters">
