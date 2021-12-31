@@ -3,6 +3,8 @@
 namespace App\Console;
 
 use App\Models\Alpha;
+use App\Models\Message;
+use App\Models\Potongan;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -29,6 +31,24 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')->hourly();
         $schedule->call(function () {
             $alpha->delete();
+        })->weekly();
+
+        $potongan = Potongan::all();
+        // $schedule->command('inspire')->hourly();
+        $schedule->call(function () {
+            $potongan->delete();
+        })->monthly();
+
+        $jadwal = Jadwal::all();
+        // $schedule->command('inspire')->hourly();
+        $schedule->call(function () {
+            $jadwal->delete();
+        })->monthly();
+
+        $message = Message::all();
+        // $schedule->command('inspire')->hourly();
+        $schedule->call(function () {
+            $message->delete();
         })->daily();
     }
 
