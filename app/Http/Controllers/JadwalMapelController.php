@@ -129,7 +129,7 @@ class JadwalMapelController extends Controller
 
     public function edit($id)
     {
-        $peraturan = Peraturan::where('id', $id)->get();
+        $peraturan = Peraturan::find($id);
         return view('peraturan.edit', compact('peraturan'));
     }
 
