@@ -5,6 +5,7 @@
 	<title>Login V16</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{{-- LINK UNTUK LOGIN --}}
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="{{ asset('regis/images/icons/favicon.ico') }}"/>
 <!--===============================================================================================-->
@@ -27,7 +28,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('regis/css/util.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('regis/css/main.css') }}">
 <!--===============================================================================================-->
-
+{{-- END LINK UNTUK LOGIN --}}
 <style>
   		.customecolor {
 
