@@ -37,7 +37,7 @@
                         @method('PUT')
                         
                             <div class="card-body">
-                                <textarea name="peraturan" class="form-control input text" class="input" type="text" placeholder="Masukkan Peraturan" >{{ old('peraturan') }}</textarea>
+                                <textarea name="peraturan" class="form-control input text h-100" class="input" type="text" placeholder="Masukkan Peraturan" >{{ old('peraturan') }}</textarea>
                             </div> 
                             <button class="btn btn-primary mt-2 ms-2" type="submit">Simpan</button> 
                         </form>
