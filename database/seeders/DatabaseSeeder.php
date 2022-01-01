@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\Kelas;
 use App\Models\Waktu;
 use App\Models\Tanggal;
+use App\Models\Evaluasi;
 use App\Models\Peraturan;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -68,10 +69,14 @@ class DatabaseSeeder extends Seeder
         //     $table->foreignId('user_id')->after('id');
         // });
 
-        Peraturan::create([
-            'id'            => '1',
-            'peraturan'     => '1. Memberikan sambutan salam kepada guru yang baru memasuki kelas.'
+        // Peraturan::create([
+        //     'id'            => '1',
+        //     'peraturan'     => '1. Memberikan sambutan salam kepada guru yang baru memasuki kelas.'
 
+        // ]);
+        Evaluasi::create([
+            'id'        => '1',
+            'evaluasi'  => 'Jadwal evaluasi Guru sebagaimana telah ditentukan dan disepakati bersama,yaitu akan dilaksanakan 1 bulan sekali,setiap tanggal 2.'
         ]);
 
 

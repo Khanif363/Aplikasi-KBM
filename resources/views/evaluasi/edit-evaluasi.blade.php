@@ -30,20 +30,17 @@
                 <div class="">
                     <div class="card">
                         <div class="card-header">
-                            <div class="card-title">Jadwal Evaluasi Guru</div>
+                            <div class="card-title">Edit Evaluasi</div>
                         </div>
-                        <div class="card-body">
-                            @foreach ($evaluasi as $evaluasis)
-                            <div class="card-sub">											
-                                {{-- <strong style="text-align: center">Jadwal evaluasi Guru sebagaimana telah ditentukan dan disepakati bersama,yaitu akan dilaksanakan 1 bulan sekali,setiap tanggal 2.
-                                    {{-- <a href="" class="btn btn-info" class="text-right" style="float: right;">Tambah</a>
-                                    <a href="" class="btn btn-primary"class="text-right" style="float: right;" >Edit</a>
-                                </strong> --}}
-                                <strong style="text-align: center">{{ $evaluasis->evaluasi }}</strong>
-                            </div>
-                            <a href="edit-evaluasi/{{ $evaluasis->id }}" class="btn btn-primary mr-2">Edit</a>
-                            @endforeach
-                        </div>  
+                        <form action="/edit-evaluasi/{{ $evaluasi->id }}" method="POST">
+                        @csrf
+                        @method('PUT')
+                        
+                            <div class="card-body">
+                                <textarea name="evaluasi" class="form-control input text h-100" class="input" type="text" placeholder="Masukkan Jadwal Evaluasi" >{{ old('evaluasi') }}</textarea>
+                            </div> 
+                            <button class="btn btn-primary mt-2 ms-2" type="submit">Simpan</button> 
+                        </form>
                     </div>
 
                 </div>

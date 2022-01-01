@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Message;
+use App\Models\Evaluasi;
 use App\Models\Potongan;
 use Illuminate\Http\Request;
 
@@ -44,7 +45,8 @@ class GuruController extends Controller
 
     public function evaluasi()
     {
-        return view('evaluasi.evaluasi-guru');
+        $evaluasi = Evaluasi::all();
+        return view('evaluasi.evaluasi-guru', compact('evaluasi'));
     }
 
     public function terima1SMP()
@@ -68,6 +70,28 @@ class GuruController extends Controller
     {
         $pesan = Message::find($id);
         return view('pesan-guru.lihat', compact('pesan'));
+    }
+
+
+
+    public function editEv($id)
+    {
+        $evaluasi = Evaluasi::find($id);
+        return view('evaluasi.edit-evaluasi', compact('evaluasi'));
+    }
+
+    public function editEvaluasi(Request $request, $id)
+    {
+        $pesan = [
+            'evaluasi.required' => "Jadwal evaluasi Harus diisi!"
+        ];
+        $request->validate([
+            'evaluasi'      => 'required',
+        ],$pesan);
+        $evaluasi = Evaluasi::where('id', $id)->first();    
+            $evaluasi->update([
+                'evaluasi'     => $request->evaluasi
+            ]);
     }
 
 }

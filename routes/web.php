@@ -72,6 +72,9 @@ Route::get('/tambah-user',[UserController::class,'tambahUser'])->middleware('aut
 Route::post('/tambah',[UserController::class,'tambah'])->middleware('auth');
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/evaluasi', [App\Http\Controllers\GuruController::class, 'evaluasi'])->name('evaluasi')->middleware('auth');
+Route::get('/edit-evaluasi/{id}', [App\Http\Controllers\GuruController::class, 'editEv'])->middleware('auth');
+Route::put('/edit-evaluasi/{id}', [App\Http\Controllers\GuruController::class, 'editEvaluasi'])->middleware('auth');
+
 Route::get('/pesan-1smp', [App\Http\Controllers\GuruController::class, 'terima1SMP'])->middleware('auth');
 Route::get('/pesan-2smp', [App\Http\Controllers\GuruController::class, 'terima2SMP'])->middleware('auth');
 Route::get('/pesan-3smp', [App\Http\Controllers\GuruController::class, 'terima3SMP'])->middleware('auth');
