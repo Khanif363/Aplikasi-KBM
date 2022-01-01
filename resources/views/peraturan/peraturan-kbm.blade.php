@@ -51,7 +51,7 @@
                                 <p>{{ $peraturans->peraturan }}</p>
                                 
                             </div>
-                            <a href="edit-peraturan/{{ $peraturans->id }}" class="btn btn-primary">Edit</a>
+                            <a href="edit-peraturan/{{ $peraturans->id }}" class="btn btn-primary mr-2">Edit</a>
                             @endforeach
                             <a href="/peraturan/cetak_pdf" class="btn btn-primary">Cetak PDF</a>
                         </div>  
