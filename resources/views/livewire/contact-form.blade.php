@@ -25,10 +25,23 @@
     @error('name')
         <p class="alert alert-success alert-block">{{ $message }}</p>
     @enderror
-    <div class="input-container ic1">
+    {{-- <div class="input-container ic1">
       <input wire:model="name" name="name" id="name" class="input" type="text"  name="name" value="{{ old('name') }}" placeholder="Masukkan Nama Lengkap" />
       {{-- <div class="cut"></div>
       <label for="name" class="placeholder">Full Name</label> --}}
+    </div> --}}
+    <div class="input-container ic1">
+      <select wire:model="name" name="name" id="name" class="input" type="text"  name="name" value="{{ old('name') }}" placeholder="Masukkan Nama Lengkap">
+        <option value="">-- Nama Lengkap --</option>
+        @foreach ($name as $names)
+        <option value="{{ $names->name }}" >{{ $names->name }}</option>                                                            
+        <option value="{{ $names->name }}" >{{ $names->name }}</option>
+        <option value="{{ $names->name }}" >{{ $names->name }}</option>
+        @endforeach                                                            
+        {{-- <option value="tambah" >Kamis</option> --}}
+    </select>
+    {{-- <div class="cut"></div>
+      <label for="kelas" class="placeholder">Kelas</label> --}}
     </div>
 
     @error('kelas')
@@ -49,10 +62,21 @@
     @error('mapel')
         <p class="alert alert-success alert-block">{{ $message }}</p>
     @enderror
-    <div class="input-container ic1">
+    {{-- <div class="input-container ic1">
       <input wire:model="mapel" name="mapel" id="mapel" class="input" type="text" value="{{ old('mapel') }}" placeholder="Masukkan Mapel" />
-      {{-- <div class="cut"></div>
-      <label for="mapel" class="placeholder">Mapel</label> --}}
+    </div> --}}
+    <div class="input-container ic1">
+      <select wire:model="mapel" name="mapel" id="mapel" class="input" type="text" value="{{ old('mapel') }}" placeholder="Masukkan Mapel">
+        <option value="">-- Nama Lengkap --</option>
+        @foreach ($mapel as $mapels)
+        <option value="{{ $mapels->mapel }}" >{{ $mapels->mapel }}</option>                                                            
+        <option value="{{ $mapels->mapel }}" >{{ $mapels->mapel }}</option>
+        <option value="{{ $mapels->mapel }}" >{{ $mapels->mapel }}</option>
+        @endforeach                                                            
+        {{-- <option value="tambah" >Kamis</option> --}}
+    </select>
+    {{-- <div class="cut"></div>
+      <label for="kelas" class="placeholder">Kelas</label> --}}
     </div>
 
     @error('kategori')
