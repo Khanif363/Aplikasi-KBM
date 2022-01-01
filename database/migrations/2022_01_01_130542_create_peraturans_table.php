@@ -15,7 +15,7 @@ class CreatePeraturansTable extends Migration
     {
         Schema::create('peraturans', function (Blueprint $table) {
             $table->id();
-            $table->string('peraturan', max);
+            $table->char('peraturan');
             $table->timestamps();
         });
     }
