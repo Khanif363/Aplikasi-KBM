@@ -114,7 +114,7 @@
             <form class="login100-form validate-form p-b-33 p-t-5" method="POST" action="{{ route('login') }}">
                 @csrf
 
-                <div class="wrap-input100 validate-input" data-validate = "Enter Email">
+                <div class="wrap-input100 validate-input">
                     <input class="input100" placeholder="Masukkan Email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                     @error('email')
                         <span class="invalid-feedback" role="alert">
