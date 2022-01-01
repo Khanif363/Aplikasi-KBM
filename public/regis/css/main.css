@@ -176,6 +176,10 @@ iframe {
   height: 100%;
   top: 0;
   left: 0;
+
+}
+
+.warna{
   background-color: rgba(0,0,0,0.65);
 }
 
@@ -199,7 +203,7 @@ iframe {
 
 .login100-form-logo {
   font-size: 60px; 
-  color: #333333;
+  color: #6d6161;
 
   display: -webkit-box;
   display: -webkit-flex;

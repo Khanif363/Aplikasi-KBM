@@ -72,7 +72,7 @@
 </div> --}}
 
 
-<div class="limiter" style="background-image: url('images/bg-01.jpg');">
+<div class="limiter warna">
     {{-- <a class="btn btn-primary float-end">Tes</a> --}}
     <div class="float-end">
         <!-- Authentication Links -->
