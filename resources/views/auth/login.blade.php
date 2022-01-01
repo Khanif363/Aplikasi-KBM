@@ -72,9 +72,9 @@
 </div> --}}
 
 
-<div class="limiter">
+<div class="limiter" style="background-image: url('images/bg-01.jpg');">
     {{-- <a class="btn btn-primary float-end">Tes</a> --}}
-    <div class="float-end" style="background-image: url('images/bg-01.jpg');">
+    <div class="float-end">
         <!-- Authentication Links -->
         @guest
             @if (Route::has('login'))
