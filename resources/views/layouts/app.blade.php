@@ -7,7 +7,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>${APP_NAME}</title>
+    {{-- <title>{{ config('app.name', 'Aplikasi-KBM') }}</title> --}}
+    <title>Aplikasi KBM</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
