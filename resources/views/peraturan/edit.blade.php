@@ -42,7 +42,7 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                                <textarea name="peraturan" class="form-control input text h-100 @error('peraturan') is-invalid @enderror" class="input" type="text" placeholder="Masukkan Peraturan" value="{{ $peraturan->peraturan }}" >{{ old('peraturan') }}</textarea>
+                                <textarea name="peraturan" class="form-control input text h-100 @error('peraturan') is-invalid @enderror" class="input" type="text" placeholder="Masukkan Peraturan"  >{{  $peraturan->peraturan  }}</textarea>
                                 <button class="btn btn-primary mt-2 ms-2" type="submit">Simpan</button> 
                             </div> 
                             

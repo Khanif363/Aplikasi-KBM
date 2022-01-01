@@ -42,7 +42,7 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                                <textarea name="evaluasi" class="form-control input text h-100 @error('evaluasi') is-invalid @enderror" class="input" type="text" placeholder="Masukkan Jadwal Evaluasi" value="{{ $evaluasi->evaluasi }}"  >{{ old('evaluasi') }}</textarea>
+                                <textarea name="evaluasi" class="form-control input text h-100 @error('evaluasi') is-invalid @enderror" class="input" type="text" placeholder="Masukkan Jadwal Evaluasi" >{{ $evaluasi->evaluasi }}</textarea>
                                 <button class="btn btn-primary mt-2 ms-2" type="submit">Simpan</button> 
                             </div> 
                             
