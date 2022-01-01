@@ -37,8 +37,8 @@
                         @method('PUT')
                         
                             <div class="card-body">
-                                <textarea name="evaluasi" class="form-control input text h-100" class="input" type="text" placeholder="Masukkan Jadwal Evaluasi"value="{{ $evaluasi->evaluasi }}  >{{ old('evaluasi') }}</textarea>
-                                <button class="btn btn-primary mt-2 ms-2" type="submit">Simpan</button> 
+                                <textarea name="evaluasi" class="form-control input text h-100" class="input" type="text" placeholder="Masukkan Jadwal Evaluasi"value="{{ $evaluasi->evaluasi }}"  >{{ old('evaluasi') }}</textarea>
+                                <button class="btn btn-primary" type="submit">Simpan</button> 
                             </div> 
                             
                         </form>
