@@ -57,7 +57,9 @@
                                 <p>{{ $peraturans->peraturan }}</p>
                                 
                             </div>
+                            @if (Auth::user()->role  == 'Admin'|Auth::user()->role  == 'Guru')
                             <a href="edit-peraturan/{{ $peraturans->id }}" class="btn btn-primary mr-2">Edit</a>
+                            @endif
                             @endforeach
                             <a href="/peraturan/cetak_pdf" class="btn btn-primary">Cetak PDF</a>
                         </div>  

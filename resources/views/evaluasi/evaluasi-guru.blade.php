@@ -47,7 +47,9 @@
                                 </strong> --}}
                                 <strong style="text-align: center">{{ $evaluasis->evaluasi }}</strong>
                             </div>
+                            @if (Auth::user()->role  == 'Admin'|Auth::user()->role  == 'Guru')
                             <a href="edit-evaluasi/{{ $evaluasis->id }}" class="btn btn-primary mr-2">Edit</a>
+                            @endif
                             @endforeach
                         </div>  
                     </div>
