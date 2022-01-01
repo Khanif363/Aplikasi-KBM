@@ -37,7 +37,12 @@
                         @method('PUT')
                         
                             <div class="card-body">
-                                <textarea name="peraturan" class="form-control input text h-100" class="input" type="text" placeholder="Masukkan Peraturan" value="{{ $peraturan->peraturan }}" >{{ old('peraturan') }}</textarea>
+                                @error('peraturan')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                                <textarea name="peraturan" class="form-control input text h-100 @error('peraturan') is-invalid @enderror" class="input" type="text" placeholder="Masukkan Peraturan" value="{{ $peraturan->peraturan }}" >{{ old('peraturan') }}</textarea>
                                 <button class="btn btn-primary mt-2 ms-2" type="submit">Simpan</button> 
                             </div> 
                             
