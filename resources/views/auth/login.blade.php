@@ -75,7 +75,7 @@
 <div class="limiter">
     
     <div class="container-login100 customecolor" style="background-image: url('images/bg-01.jpg');">
-        <div class="navbar-nav">
+        <div class="">
             <!-- Authentication Links -->
             @guest
                 @if (Route::has('login'))
