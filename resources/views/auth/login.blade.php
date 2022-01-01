@@ -78,13 +78,13 @@
         @guest
             @if (Route::has('login'))
                 <div class="">
-                    <a class="nav-link btn btn-info" href="{{ route('login') }}">{{ __('Login') }}</a>
+                    <a class="btn btn-info" href="{{ route('login') }}">{{ __('Login') }}</a>
                 </div>
             @endif
 
             @if (Route::has('register'))
                 <div class="">
-                    <a class="nav-link btn btn-primary" href="{{ route('register') }}">{{ __('Register') }}</a>
+                    <a class="btn btn-primary" href="{{ route('register') }}">{{ __('Register') }}</a>
                 </div>
             @endif
         @else
