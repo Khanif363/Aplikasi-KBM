@@ -73,7 +73,7 @@
 
 
 <div class="limiter">
-    <ul class="navbar-nav">
+    <div class="navbar-nav">
         <!-- Authentication Links -->
         @guest
             @if (Route::has('login'))
@@ -88,6 +88,7 @@
                 </div>
             @endif
         @else
+        <ul>
             <li class="nav-item dropdown">
                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                     {{ Auth::user()->name }}
@@ -105,8 +106,9 @@
                     </form>
                 </div>
             </li>
+        </ul>
         @endguest
-    </ul>
+        </div>
     <div class="container-login100 customecolor" style="background-image: url('images/bg-01.jpg');">
         <div class="wrap-login100 p-t-30 p-b-50">
             <span class="login100-form-title p-b-41">
