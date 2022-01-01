@@ -74,7 +74,7 @@
 
 <div class="limiter">
     {{-- <a class="btn btn-primary float-end">Tes</a> --}}
-    <div class="float-end customecolor">
+    <div class="float-end" style="background-image: url('images/bg-01.jpg');">
         <!-- Authentication Links -->
         @guest
             @if (Route::has('login'))
@@ -106,7 +106,7 @@
         </ul>
         @endguest
     </div>
-    <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+    <div class="container-login100">
         <div class="wrap-login100 p-t-30 p-b-50">
             <span class="login100-form-title p-b-41">
                 {{ __('Login') }}
