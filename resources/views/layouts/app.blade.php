@@ -59,7 +59,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
 
-                    </ul>
+                    </ul> --}}
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
@@ -96,7 +96,7 @@
                             </li>
                         @endguest
                     </ul>
-                </div>
+                {{-- </div>
             </div>
         </nav> --}}
 
