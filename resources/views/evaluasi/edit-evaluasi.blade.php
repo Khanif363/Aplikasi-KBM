@@ -38,8 +38,9 @@
                         
                             <div class="card-body">
                                 <textarea name="evaluasi" class="form-control input text h-100" class="input" type="text" placeholder="Masukkan Jadwal Evaluasi" >{{ old('evaluasi') }}</textarea>
+                                <button class="btn btn-primary mt-2 ms-2" type="submit">Simpan</button> 
                             </div> 
-                            <button class="btn btn-primary mt-2 ms-2" type="submit">Simpan</button> 
+                            
                         </form>
                     </div>
 
