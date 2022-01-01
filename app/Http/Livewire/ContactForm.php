@@ -63,7 +63,7 @@ class ContactForm extends Component
                 
 
             );
-            session()->flash('message', 'Your Message is Submitted.');
+            session()->flash('message', 'Berhasil,pesanmu sudah terkirim!');
 
             $this->success = 'Thank you for reaching out to us!';
 
@@ -87,7 +87,7 @@ class ContactForm extends Component
                 
 
             );
-            session()->flash('message', 'Selamat,pesanmu sudah terkirim!.');
+            session()->flash('message', 'Berhasil,pesanmu sudah terkirim!');
 
             $this->success = 'Thank you for reaching out to us!';
 
@@ -111,7 +111,7 @@ class ContactForm extends Component
                 
 
             );
-            session()->flash('message', 'Your Message is Submitted.');
+            session()->flash('message', 'Berhasil,pesanmu sudah terkirim!');
 
             $this->success = 'Thank you for reaching out to us!';
 
