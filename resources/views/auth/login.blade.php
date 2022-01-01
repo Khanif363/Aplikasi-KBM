@@ -73,9 +73,9 @@
 
 
 <div class="limiter">
-    
+    <button class="btn-primary mr-0">Tes</button>
     <div class="container-login100 customecolor" style="background-image: url('images/bg-01.jpg');">
-        <button>Tes</button>
+        
         <div class="">
             <!-- Authentication Links -->
             @guest
