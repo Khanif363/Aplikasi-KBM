@@ -74,7 +74,7 @@
 
 <div class="limiter">
     <div class="container-login100 customecolor" style="background-image: url('images/bg-01.jpg');">
-        <div class="wrap-login100 p-t-30 p-b-50">
+        <div class="wrap-login100 ">
             <span class="login100-form-title p-b-41">
                 {{ __('Login') }}
             </span>
