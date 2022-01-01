@@ -44,7 +44,7 @@ class ContactForm extends Component
                 'email' => $this->email,
                 'message' => $this->comment,
         ]);
-
+        
         $contact = $this->validate();
         if($this->kelas == '1 SMP'){
             Mail::send('email',

@@ -351,7 +351,7 @@
 	<div class="main-panel">
 		<div class="content customecolor">
 	{{-- @yield('content') --}}
-	@livewire('contact-form',$name,$guru)
+	@livewire('contact-form')
 		</div>
 
 		@include('landing.footer')

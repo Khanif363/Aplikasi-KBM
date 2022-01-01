@@ -27,9 +27,7 @@ Route::get('/daftarmapel/1smp',[JadwalMapelController::class,'mapel'])->name('ma
 Route::get('/bang/{id}/{mapel_id}', [JadwalMapelController::class,'jadwalmapel'])->middleware('auth');
 
 Route::get('/kirim-tugas', function () {
-    $name = User::where('role','Siswa');
-    $guru = User::where('role','Guru');
-    return view('welcome',compact('name','guru'));
+    return view('welcome');
 })->middleware('auth');
 // // Route::get('/contact', [ContactForm::class,'view'])->middleware('auth');
 // Route::post('/contact-form', [ContactForm::class,'contactFormSubmit'])->middleware('auth');
