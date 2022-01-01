@@ -37,12 +37,13 @@
                         @method('PUT')
                         
                             <div class="card-body">
+                                
+                                <textarea name="evaluasi" class="form-control input text h-100 @error('evaluasi') is-invalid @enderror" class="input" type="text" placeholder="Masukkan Jadwal Evaluasi" >{{ $evaluasi->evaluasi }}</textarea>
                                 @error('evaluasi')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                                <textarea name="evaluasi" class="form-control input text h-100 @error('evaluasi') is-invalid @enderror" class="input" type="text" placeholder="Masukkan Jadwal Evaluasi" >{{ $evaluasi->evaluasi }}</textarea>
                                 <button class="btn btn-primary mt-2 ms-2" type="submit">Simpan</button> 
                             </div> 
                             
