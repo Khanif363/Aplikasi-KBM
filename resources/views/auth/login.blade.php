@@ -126,6 +126,11 @@
 
                 <div class="wrap-input100 validate-input" data-validate="Enter password">
                     <input class="input100" placeholder="Masukkan Password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="{{ old('password') }}" required autocomplete="password" autofocus>
+                    @error('password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                     <span class="focus-input100" data-placeholder="&#xe80f;"></span>
                 </div>
 
