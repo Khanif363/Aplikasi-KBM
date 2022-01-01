@@ -30,7 +30,7 @@
                 <div class="">
                     <div class="card">
                         <div class="card-header">
-                            <div class="card-title">Edit Evaluasi</div>
+                            <div class="card-title">Edit Jadwal Evaluasi</div>
                         </div>
                         <form action="/edit-evaluasi/{{ $evaluasi->id }}" method="POST">
                         @csrf
