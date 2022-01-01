@@ -78,7 +78,6 @@ class DatabaseSeeder extends Seeder
         //     5. Mengerjakan tugas yang diberikan oleh guru tepat pada waktunya.'
         // ]);
 
-        DB::table('peraturans')->delete();
 
 
     }
