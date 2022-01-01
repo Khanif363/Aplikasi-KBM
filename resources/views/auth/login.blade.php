@@ -73,7 +73,7 @@
 
 
 <div class="limiter">
-    <button class="btn-primary mr-0">Tes</button>
+    <a class="btn btn-primary float-end">Tes</a>
     <div class="container-login100 customecolor" style="background-image: url('images/bg-01.jpg');">
         
         <div class="">
