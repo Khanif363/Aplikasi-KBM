@@ -78,11 +78,11 @@
         <!-- Authentication Links -->
         @guest
             @if (Route::has('login'))
-                <a class="badge bg-primary" href="{{ route('login') }}">{{ __('Login') }}</a>
+                <a class="badge bg-primary text-dark" href="{{ route('login') }}">{{ __('Login') }}</a>
             @endif
 
             @if (Route::has('register'))
-                <a class="badge bg-warning text-dark" href="{{ route('register') }}">{{ __('Register') }}</a>
+                <a class="badge bg-warning " href="{{ route('register') }}">{{ __('Register') }}</a>
             @endif
         @else
         <ul>
