@@ -57,7 +57,7 @@ class ContactForm extends Component
                 'comment' => $this->comment,
                 ),
                 function($message){
-                    $message->from('nyantridulubarukerja@gmail.com', 'Flash');
+                    $message->from($this->email, 'Flash');
                     $message->to('testinglaravel18@gmail.com', 'Khanif')->subject('Pesan Siswa');
                 }
                 
@@ -81,7 +81,7 @@ class ContactForm extends Component
                 'comment' => $this->comment,
                 ),
                 function($message){
-                    $message->from('testinglaravel18@gmail.com', 'Tugas');
+                    $message->from($this->email, 'Tugas');
                     $message->to('nyantridulubarukerja@gmail.com', 'Khanif')->subject('Pesan Siswa');
                 }
                 
@@ -105,7 +105,7 @@ class ContactForm extends Component
                 'comment' => $this->comment,
                 ),
                 function($message){
-                    $message->from('nyantridulubarukerja@gmail.com', 'Task');
+                    $message->from($this->email, 'Task');
                     $message->to('terusmelangkah00@gmail.com', 'Cek')->subject('Pesan Siswa');
                 }
                 
