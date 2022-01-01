@@ -81,7 +81,7 @@ animation: changeBackgroundColor 7s infinite;
 	
 
 	<div id="dropDownSelect1"></div>
-	
+	{{-- SCRIPT UNTUK LOGIN --}}
 <!--===============================================================================================-->
 	<script src="{{ asset('regis/vendor/jquery/jquery-3.2.1.min.js') }}"></script>
 <!--===============================================================================================-->
@@ -98,6 +98,6 @@ animation: changeBackgroundColor 7s infinite;
 	<script src="{{ asset('regis/vendor/countdowntime/countdowntime.js') }}"></script>
 <!--===============================================================================================-->
 	<script src="{{ asset('regis/js/main.js') }}"></script>
-
+{{-- END SCRIPT UNTUK LOGIN --}}
 </body>
 </html>

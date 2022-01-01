@@ -18,6 +18,31 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    	{{-- LINK UNTUK LOGIN --}}
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="{{ asset('regis/images/icons/favicon.ico') }}"/>
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="{{ asset('regis/vendor/bootstrap/css/bootstrap.min.css') }}">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="{{ asset('regis/fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="{{ asset('regis/fonts/Linearicons-Free-v1.0.0/icon-font.min.css') }}">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="{{ asset('regis/vendor/animate/animate.css') }}">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="{{ asset('regis/vendor/css-hamburgers/hamburgers.min.css') }}">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="{{ asset('regis/vendor/animsition/css/animsition.min.css') }}">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="{{ asset('regis/vendor/select2/select2.min.css') }}">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="{{ asset('regis/vendor/daterangepicker/daterangepicker.css') }}">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="{{ asset('regis/css/util.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('regis/css/main.css') }}">
+    <!--===============================================================================================-->
+    {{-- END LINK UNTUK LOGIN --}}
 </head>
 <body>
     <div id="app">
