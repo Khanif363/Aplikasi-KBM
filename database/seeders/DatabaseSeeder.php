@@ -74,10 +74,10 @@ class DatabaseSeeder extends Seeder
         //     'peraturan'     => '1. Memberikan sambutan salam kepada guru yang baru memasuki kelas.'
 
         // ]);
-        Evaluasi::create([
-            'id'        => '1',
-            'evaluasi'  => 'Jadwal evaluasi Guru sebagaimana telah ditentukan dan disepakati bersama,yaitu akan dilaksanakan 1 bulan sekali,setiap tanggal 2.'
-        ]);
+        // Evaluasi::create([
+        //     'id'        => '1',
+        //     'evaluasi'  => 'Jadwal evaluasi Guru sebagaimana telah ditentukan dan disepakati bersama,yaitu akan dilaksanakan 1 bulan sekali,setiap tanggal 2.'
+        // ]);
 
 
 

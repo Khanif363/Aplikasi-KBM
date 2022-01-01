@@ -29,6 +29,12 @@
             <div class="">
                 <div class="">
                     <div class="card">
+                        @if ($message = Session::get('Success'))
+                            <div class="alert alert-success alert-block">
+                                <button type="button" class="close" data-dismiss="alert">×</button>    
+                                <strong>{{ $message }}</strong>
+                            </div>
+                        @endif
                         <div class="card-header">
                             <div class="card-title">Jadwal Evaluasi Guru</div>
                         </div>

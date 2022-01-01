@@ -145,6 +145,7 @@ class JadwalMapelController extends Controller
             $peraturan->update([
                 'peraturan'     => $request->peraturan
             ]);
+            return redirect()->route('peraturan')->with('Success', 'Peraturan berhasil diedit!');
     }
 
     public function cetak_pdf()

@@ -92,6 +92,7 @@ class GuruController extends Controller
             $evaluasi->update([
                 'evaluasi'     => $request->evaluasi
             ]);
+            return redirect()->route('evaluasi')->with('Success', 'Jadwal evaluasi berhasil diedit!');
     }
 
 }
