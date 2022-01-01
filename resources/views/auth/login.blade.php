@@ -77,13 +77,13 @@
         <!-- Authentication Links -->
         @guest
             @if (Route::has('login'))
-                <div class="nav-item">
+                <div class="">
                     <a class="nav-link btn btn-info" href="{{ route('login') }}">{{ __('Login') }}</a>
                 </div>
             @endif
 
             @if (Route::has('register'))
-                <div class="nav-item">
+                <div class="">
                     <a class="nav-link btn btn-primary" href="{{ route('register') }}">{{ __('Register') }}</a>
                 </div>
             @endif
