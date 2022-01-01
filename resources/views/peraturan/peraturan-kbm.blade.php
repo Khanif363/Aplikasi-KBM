@@ -33,12 +33,13 @@
                             <div class="card-title">Peraturan-peraturan ketika KBM</div>
                         </div>
                         <div class="card-body">
+                            @foreach ($peraturan as $peraturans)
                             <div class="card-sub">											
                                 <strong style="text-align: center">Peraturan
                                     {{-- <a href="" class="btn btn-info" class="text-right" style="float: right;">Tambah</a> --}}
                                 {{-- <a href="edit-peraturan/{{ $peraturans->id }}" class="btn btn-primary"class="text-right" style="float: right;" >Edit</a> --}}
                                 </strong>
-                                @foreach ($peraturan as $peraturans)
+                                
                                 {{-- <p>
                                     1. Memberikan sambutan salam kepada guru yang baru memasuki kelas.<br>
                                     2. Selalu menggunakan seragam dengan benar dan rapi.<br>
