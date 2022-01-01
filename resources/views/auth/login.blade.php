@@ -73,41 +73,41 @@
 
 
 <div class="limiter">
-    <div class="container-login100 customecolor" style="background-image: url('images/bg-01.jpg');">
-        <ul class="navbar-nav">
-            <!-- Authentication Links -->
-            @guest
-                @if (Route::has('login'))
-                    <li class="nav-item">
-                        <a class="nav-link btn btm-info" href="{{ route('login') }}">{{ __('Login') }}</a>
-                    </li>
-                @endif
+    <ul class="navbar-nav">
+        <!-- Authentication Links -->
+        @guest
+            @if (Route::has('login'))
+                <li class="nav-item">
+                    <a class="nav-link btn btm-info" href="{{ route('login') }}">{{ __('Login') }}</a>
+                </li>
+            @endif
 
-                @if (Route::has('register'))
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-primary" href="{{ route('register') }}">{{ __('Register') }}</a>
-                    </li>
-                @endif
-            @else
-                <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->name }}
+            @if (Route::has('register'))
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary" href="{{ route('register') }}">{{ __('Register') }}</a>
+                </li>
+            @endif
+        @else
+            <li class="nav-item dropdown">
+                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    {{ Auth::user()->name }}
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
                     </a>
 
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ route('logout') }}"
-                           onclick="event.preventDefault();
-                                         document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
-                        </a>
-
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                            @csrf
-                        </form>
-                    </div>
-                </li>
-            @endguest
-        </ul>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </div>
+            </li>
+        @endguest
+    </ul>
+    <div class="container-login100 customecolor" style="background-image: url('images/bg-01.jpg');">
         <div class="wrap-login100 p-t-30 p-b-50">
             <span class="login100-form-title p-b-41">
                 {{ __('Login') }}
