@@ -15,7 +15,7 @@ class CreateEvaluasisTable extends Migration
     {
         Schema::create('evaluasis', function (Blueprint $table) {
             $table->id();
-            $table->string('evaluasi');
+            $table->string('evaluasi', 10000000000000);
             $table->timestamps();
         });
     }
