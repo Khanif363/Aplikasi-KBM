@@ -74,7 +74,7 @@
 
 <div class="limiter warna">
     {{-- <a class="btn btn-primary float-end">Tes</a> --}}
-    <div class="float-end pt-2 pr-2">
+    <div class="float-end padding-top-2 padding-right-2">
         <!-- Authentication Links -->
         @guest
             @if (Route::has('login'))
