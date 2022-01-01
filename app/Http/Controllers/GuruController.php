@@ -69,4 +69,5 @@ class GuruController extends Controller
         $pesan = Message::find($id);
         return view('pesan-guru.lihat', compact('pesan'));
     }
+
 }

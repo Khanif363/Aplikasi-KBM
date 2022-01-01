@@ -10,6 +10,7 @@ use App\Models\Waktu;
 use App\Models\Jadwal;
 // use Barryvdh\DomPDF\PDF;
 // use Barryvdh\DomPDF\Facade as PDF;
+use App\Models\Peraturan;
 use Illuminate\Http\Request;
 
 class JadwalMapelController extends Controller
@@ -122,7 +123,28 @@ class JadwalMapelController extends Controller
 
     public function peraturan()
     {
-        return view('peraturan.peraturan-kbm');
+        $peraturan = Peraturan::all();
+        return view('peraturan.peraturan-kbm', compact('peraturan'));
+    }
+
+    public function edit($id)
+    {
+        $peraturan = Peraturan::where('id', $id)->get();
+        return view('peraturan.edit', compact('peraturan'));
+    }
+
+    public function editPeraturan(Request $request, $id)
+    {
+        $pesan = [
+            'peraturan.required' => "Peraturan Harus diisi!"
+        ];
+        $request->validate([
+            'peraturan'      => 'required',
+        ],$pesan);
+        $peraturan = Peraturan::where('id', $id)->first();    
+            $peraturan->update([
+                'peraturan'     => $request->peraturan
+            ]);
     }
 
     public function cetak_pdf()

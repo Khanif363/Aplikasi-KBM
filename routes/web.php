@@ -1,8 +1,9 @@
 <?php
 
 use App\Models\User;
-use App\Http\Livewire\ContactForm;
+use App\Models\Peraturan;
 
+use App\Http\Livewire\ContactForm;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\UserController;
@@ -50,6 +51,12 @@ Route::post('/potong',[GuruController::class,'potong'])->middleware('auth');
 Route::get('tambah/jadwal', [JadwalMapelController::class,'tambahJadwal'])->middleware('auth');
 Route::get('tambah/alpha', [AlphaController::class,'tambahAlpha'])->middleware('auth');
 Route::get('/peraturan', [JadwalMapelController::class,'peraturan'])->middleware('auth');
+Route::get('/edit-peraturan/{id}', [JadwalMapelController::class,'edit'])->middleware('auth');
+// Route::get('/edit-peraturan', function () {
+//     $peraturan = Peraturan::all();
+//     return view('peraturan.edit',compact('peraturan'));
+// })->middleware('auth');
+Route::put('/edit-peraturan/{id}', [JadwalMapelController::class,'editPeraturan'])->middleware('auth');
 Route::get('/peraturan/cetak_pdf', [JadwalMapelController::class,'cetak_pdf'])->middleware('auth');
 Route::get('/profile-1smp', [UserController::class,'profile1SMP'])->middleware('auth');
 Route::get('/profile-2smp', [UserController::class,'profile2SMP'])->middleware('auth');

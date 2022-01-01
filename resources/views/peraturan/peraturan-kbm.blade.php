@@ -35,18 +35,23 @@
                         <div class="card-body">
                             <div class="card-sub">											
                                 <strong style="text-align: center">Peraturan
-                                    {{-- <a href="" class="btn btn-info" class="text-right" style="float: right;">Tambah</a>
-                                    <a href="" class="btn btn-primary"class="text-right" style="float: right;" >Edit</a> --}}
+                                    {{-- <a href="" class="btn btn-info" class="text-right" style="float: right;">Tambah</a> --}}
+                                {{-- <a href="edit-peraturan/{{ $peraturans->id }}" class="btn btn-primary"class="text-right" style="float: right;" >Edit</a> --}}
                                 </strong>
-                                <p>
+                                @foreach ($peraturan as $peraturans)
+                                {{-- <p>
                                     1. Memberikan sambutan salam kepada guru yang baru memasuki kelas.<br>
                                     2. Selalu menggunakan seragam dengan benar dan rapi.<br>
                                     3. Mendengarkan dengan baik apa yang guru sampaikan.<br>
                                     3. Dilarang meninggalkan kelas sebelum diizinkan oleh guru.<br>
                                     4. Dilarang merokok,pacaran dan hal-hal sebagainya yang dilarang dalam islam.<br>
                                     5. Mengerjakan tugas yang diberikan oleh guru tepat pada waktunya.
-                                </p>
+                                </p> --}}
+                                <p>{{ $peraturans->peraturan }}</p>
+                                
                             </div>
+                            <a href="edit-peraturan/{{ $peraturans->id }}" class="btn btn-primary"class="text-right" style="float: right;" >Edit</a>
+                            @endforeach
                             <a href="/peraturan/cetak_pdf" class="btn btn-primary">Cetak PDF</a>
                         </div>  
                     </div>
