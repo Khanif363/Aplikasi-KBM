@@ -86,7 +86,7 @@
             @endif
 
             @if (Route::has('register'))
-                <a class="badge bg-warning" href="{{ route('register') }}">{{ __('Register') }}</a>
+                <a class="badge bg-warning text-dark" href="{{ route('register') }}">{{ __('Register') }}</a>
             @endif
         @else
         <ul>
