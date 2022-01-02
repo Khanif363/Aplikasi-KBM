@@ -7,6 +7,7 @@ use App\Models\Message;
 use App\Models\Evaluasi;
 use App\Models\Potongan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class GuruController extends Controller
 {
@@ -18,8 +19,15 @@ class GuruController extends Controller
 
     public function tambahpotongan()
     {
-        $user = User::where('role','Guru')->get();
-        return view('potongan.tambah', compact('user'));
+        if(Auth::user()->role  == 'Admin'|Auth::user()->role  == 'Guru'){
+            $user = User::where('role','Guru')->get();
+            return view('potongan.tambah', compact('user'));
+        }
+        else
+        {
+            return view('error');
+        }
+        
     }
 
     public function potong(Request $request)
