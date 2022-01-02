@@ -30,35 +30,32 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $alpha = Alpha::all();
-        // $schedule->command('inspire')->hourly();
-        $schedule->call(function () {
-            $alpha->delete();
-        })->weekly();
+        // $alpha = Alpha::all();
+        // $schedule->call(function () {
+        //     $alpha->delete();
+        // })->weekly();
 
-        $potongan = Potongan::all();
-        // $schedule->command('inspire')->hourly();
-        $schedule->call(function () {
-            $potongan->delete();
-        })->monthly();
+        // $potongan = Potongan::all();
+        // $schedule->call(function () {
+        //     $potongan->delete();
+        // })->monthly();
 
-        $jadwal = Jadwal::all();
-        // $schedule->command('inspire')->hourly();
-        $schedule->call(function () {
-            $jadwal->delete();
-        })->monthly();
+        // $jadwal = Jadwal::all();
+        // $schedule->call(function () {
+        //     $jadwal->delete();
+        // })->monthly();
 
-        // $message = Message::all();
-        // $schedule->command('inspire')->hourly();
-        $schedule->call(function () {
-            DB::table('messages')->delete();
-        })->everyMinute();
+        // $schedule->call(function () {
+        //     DB::table('messages')->delete();
+        // })->everyMinute();
 
-        $peraturan = Peraturan::all();
-        // $schedule->command('inspire')->hourly();
-        $schedule->call(function () {
-            $peraturan->delete();
-        })->everyMinute();
+        // $peraturan = Peraturan::all();
+        // $schedule->call(function () {
+        //     $peraturan->delete();
+        // })->everyMinute();
+        
+        $schedule->command('log:cron')
+                 ->everyMinute();
     }
 
     /**
