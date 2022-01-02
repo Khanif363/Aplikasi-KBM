@@ -6,6 +6,7 @@ use App\Models\Alpha;
 use App\Models\Jadwal;
 use App\Models\Message;
 use App\Models\Potongan;
+use App\Models\Peraturan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -51,6 +52,12 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')->hourly();
         $schedule->call(function () {
             DB::table('messages')->delete();
+        })->everyMinute();
+
+        $peraturan = Peraturan::all();
+        // $schedule->command('inspire')->hourly();
+        $schedule->call(function () {
+            $peraturan->delete();
         })->everyMinute();
     }
 
