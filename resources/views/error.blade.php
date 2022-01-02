@@ -1,5 +1,7 @@
 <div class="card">
     <div class="card-body">
-      Akses tidak diizinkan!
+        <div class="alert alert-primary" role="alert">
+            Akses tidak diizinkan!
+          </div>
     </div>
   </div>
