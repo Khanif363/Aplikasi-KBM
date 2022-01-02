@@ -82,7 +82,7 @@
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <h1>Selamat datang di <span>Aplikasi KBM</span></h1>
-      <h2>Beragam fitur yang menarik bisa anda gunakan sesuai keinginan anda.</h2>
+      <h2 class="text-dark">Beragam fitur yang menarik bisa anda gunakan sesuai keinginan anda.</h2>
       <div class="d-flex">
         {{-- <a href="" class="btn-get-started scrollto">Mulai</a> --}}
         @guest
