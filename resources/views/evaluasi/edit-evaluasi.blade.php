@@ -38,7 +38,7 @@
                         
                             <div class="card-body">
                                 
-                                <textarea name="evaluasi" class="form-control input text h-100 @error('evaluasi') is-invalid @enderror" class="input" type="text" placeholder="Masukkan Jadwal Evaluasi" >{{ $evaluasi->evaluasi }}</textarea>
+                                <textarea name="evaluasi" id="editor" class="form-control input text h-100 @error('evaluasi') is-invalid @enderror" class="input" type="text" placeholder="Masukkan Jadwal Evaluasi" >{{ $evaluasi->evaluasi }}</textarea>
                                 @error('evaluasi')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -54,4 +54,16 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('ck-editor')
+    <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.js"></script>
+
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
 @endsection
