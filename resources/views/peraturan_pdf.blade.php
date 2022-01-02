@@ -28,7 +28,7 @@
                 4. Dilarang merokok,pacaran dan hal-hal sebagainya yang dilarang dalam islam.<br>
                 5. Mengerjakan tugas yang diberikan oleh guru tepat pada waktunya.
             </p> --}}
-            {{ $peraturans->peraturan }}
+            {!! $peraturans->peraturan !!}
             @endforeach
         </div>
     </div>  
