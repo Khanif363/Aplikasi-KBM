@@ -657,5 +657,6 @@
 
 	@yield('chart')
 	@yield('jam')
+	@yield('ck-editor')
 {{-- @livewireScripts --}}
 </body>
