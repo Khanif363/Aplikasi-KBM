@@ -63,17 +63,17 @@
 									</div>
 									<div class="u-text">
 										<h4>{{ Auth::user()->name }}</h4>
-										<p class="text-muted">{{ Auth::user()->email }}</p><a href="/profile-pribadi/{{ Auth::user()->name }}" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+										<p class="text-muted">{{ Auth::user()->email }}</p><a href="/profile-pribadi/{{ Auth::user()->name }}" class="btn btn-xs btn-secondary btn-sm">Lihat Profile</a>
 									</div>
 								</div>
 							</li>
 							<li>
-								<div class="dropdown-divider"></div>
+								{{-- <div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="/profile-pribadi/{{ Auth::user()->name }}">My Profile</a>
-								{{-- <a class="dropdown-item" href="#">My Balance</a> --}}
-								{{-- <a class="dropdown-item" href="#">Inbox</a> --}}
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="/edit-profile/{{ Auth::user()->name }}">Account Setting</a>
+								<a class="dropdown-item" href="#">My Balance</a>
+								<a class="dropdown-item" href="#">Inbox</a>
+								<div class="dropdown-divider"></div> --}}
+								<a class="dropdown-item" href="/edit-profile/{{ Auth::user()->name }}">Edit Profile</a>
 								<div class="dropdown-divider"></div>
 								{{-- <a class="dropdown-item" href="{{ Route('logout') }}">Logout</a> --}}
 								<a class="dropdown-item" href="{{ route('landing') }}"
@@ -119,7 +119,7 @@
 						<ul class="nav">
 							<li>
 								<a href="/profile-pribadi/{{ Auth::user()->name }}">
-									<span class="link-collapse">My Profile</span>
+									<span class="link-collapse">Profile saya</span>
 								</a>
 							</li>
 							<li>

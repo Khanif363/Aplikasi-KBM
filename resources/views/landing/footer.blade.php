@@ -20,7 +20,7 @@
             </ul>
         </nav>
         <div class="copyright ml-auto">
-            2021, made with <i class="fa fa-heart heart text-danger"></i> by <a href="https://www.laravel.com">Laravel</a>
+            2021, made with by <a href="https://www.laravel.com">Laravel</a>
         </div>				
     </div>
 </footer>
