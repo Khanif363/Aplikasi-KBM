@@ -45,7 +45,7 @@
                                     {{-- <a href="" class="btn btn-info" class="text-right" style="float: right;">Tambah</a>
                                     <a href="" class="btn btn-primary"class="text-right" style="float: right;" >Edit</a>
                                 </strong> --}}
-                                <strong style="text-align: center">{!! $evaluasis->evaluasi !!}</strong>
+                                <p style="text-align: center">{!! $evaluasis->evaluasi !!}</p>
                             </div>
                             @if (Auth::user()->role  == 'Admin'|Auth::user()->role  == 'Guru')
                             <a href="edit-evaluasi/{{ $evaluasis->id }}" class="btn btn-primary mr-2">Edit</a>
