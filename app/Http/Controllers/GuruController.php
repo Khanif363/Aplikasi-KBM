@@ -84,8 +84,13 @@ class GuruController extends Controller
 
     public function editEv($id)
     {
+        if(Auth::user()->role  == 'Admin'|Auth::user()->role  == 'Guru'){
         $evaluasi = Evaluasi::find($id);
         return view('evaluasi.edit-evaluasi', compact('evaluasi'));
+        }
+        else{
+            return view('error');
+        }
     }
 
     public function editEvaluasi(Request $request, $id)

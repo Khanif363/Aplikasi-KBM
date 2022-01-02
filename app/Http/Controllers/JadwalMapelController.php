@@ -34,30 +34,6 @@ class JadwalMapelController extends Controller
     // }
 
 
-    public function delete()
-    {
-        $kelas = Kelas::all();
-        $mapel = Mapel::all();
-        $user = User::all();
-        return view('daftar-mapel.delete-mapel', compact('kelas','mapel','user'));
-    }
-
-    public function deleteMapel($user_id,$kelas_id,$mapel)
-    {
-        // [
-        //     $request->mapel,
-        //     $request->guru,
-        //     $request->kelas,
-        // ];
-
-        User::findOrFail('user_id',$user_id);
-        Kelas::findOrFail('kelas_id', $kelas_id);
-        $mapel = Mapel::findOrFail('mapel',$mapel);
-        $produk->delete();       
-        return redirect()->route('mapel');
-    }
-
-
     public function jadwal1SMP()
     {
         // Guru::find($id);
@@ -82,12 +58,18 @@ class JadwalMapelController extends Controller
 
     public function tambahJadwal()
     {
+        if(Auth::user()->role  == 'Admin'|Auth::user()->role  == 'Guru'){
         // $jadwal = Jadwal::all();
         $user = User::where('role','Guru')->get();
         $waktu = Waktu::all();
         $kelas = Kelas::all();
         $hari = Hari::all();
         return view('jadwal-pelajaran.tambah-jadwal',compact('user','waktu','kelas','hari'));
+        }
+        else
+        {
+            return view('error');
+        }
     }
 
     public function buat(Request $request)
@@ -129,8 +111,14 @@ class JadwalMapelController extends Controller
 
     public function edit($id)
     {
+        if(Auth::user()->role  == 'Admin'|Auth::user()->role  == 'Guru'){
         $peraturan = Peraturan::find($id);
         return view('peraturan.edit', compact('peraturan'));
+        }
+        else
+        {
+            return view('error');
+        }
     }
 
     public function editPeraturan(Request $request, $id)
@@ -152,7 +140,7 @@ class JadwalMapelController extends Controller
     {
     
         $peraturan = Peraturan::all();
-        
+
         $pdf = \PDF::loadview('peraturan_pdf',['peraturan'=>$peraturan]);
         return $pdf->download('peraturan-siswa-pdf');
     }

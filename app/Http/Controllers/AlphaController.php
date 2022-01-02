@@ -8,6 +8,7 @@ use App\Models\Alpha;
 use App\Models\Kelas;
 use App\Models\Tanggal;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AlphaController extends Controller
 {
@@ -46,10 +47,16 @@ class AlphaController extends Controller
 
     public function tambahAlpha()
     {
+        if(Auth::user()->role  == 'Admin'|Auth::user()->role  == 'Guru'){
         $user = User::where('role','Siswa')->get();
         $hari = Hari::all();
         
         return view('daftar-alpha.tambah-alpha', compact('user', 'hari'));
+        }
+        else
+        {
+            return view('error');
+        }
     }
 
 

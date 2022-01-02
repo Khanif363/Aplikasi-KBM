@@ -36,6 +36,7 @@ class UserController extends Controller
 
     public function editProfile($name)
     {
+        if(Auth::user()->role  == 'Admin'|Auth::user()->role  == 'Guru'){
         $title = "My Profile";
         $kelas = Kelas::all();
         $user = User::where('name', $name)->first();
@@ -44,6 +45,11 @@ class UserController extends Controller
             'title' => $title,
             'kelas' => $kelas,
         ]);
+        }
+        else
+        {
+            return view('error');
+        }
     }
 
     public function edit(Request $request, $name)
@@ -104,8 +110,14 @@ class UserController extends Controller
 
     public function tambahUser()
     {
+        if(Auth::user()->role  == 'Admin'|Auth::user()->role  == 'Guru'){
         $role = Role::all();
         return view('user.buat-user',compact('role'));
+        }
+        else
+        {
+            return view('error');
+        }
     }
 
     public function tambah(Request $request)

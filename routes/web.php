@@ -80,6 +80,3 @@ Route::get('/pesan-2smp', [App\Http\Controllers\GuruController::class, 'terima2S
 Route::get('/pesan-3smp', [App\Http\Controllers\GuruController::class, 'terima3SMP'])->middleware('auth');
 Route::get('/lihat/{id}', [App\Http\Controllers\GuruController::class, 'lihat'])->middleware('auth');
 Route::get('/home', [ChartJsController::class, 'index'])->middleware('auth');
-Route::get('/error', function () {
-    return view('error');
-})->name('error');
