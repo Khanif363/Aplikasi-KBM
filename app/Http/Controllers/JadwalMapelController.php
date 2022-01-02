@@ -151,7 +151,9 @@ class JadwalMapelController extends Controller
     public function cetak_pdf()
     {
     
-        $pdf = \PDF::loadview('peraturan_pdf');
+        $peraturan = Peraturan::all();
+        
+        $pdf = \PDF::loadview('peraturan_pdf',['peraturan'=>$peraturan]);
         return $pdf->download('peraturan-siswa-pdf');
     }
 
