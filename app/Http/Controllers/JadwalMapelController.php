@@ -12,6 +12,7 @@ use App\Models\Jadwal;
 // use Barryvdh\DomPDF\Facade as PDF;
 use App\Models\Peraturan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class JadwalMapelController extends Controller
 {
