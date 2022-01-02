@@ -6,6 +6,7 @@ use App\Models\Alpha;
 use App\Models\Jadwal;
 use App\Models\Message;
 use App\Models\Potongan;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -46,10 +47,10 @@ class Kernel extends ConsoleKernel
             $jadwal->delete();
         })->monthly();
 
-        $message = Message::all();
+        // $message = Message::all();
         // $schedule->command('inspire')->hourly();
         $schedule->call(function () {
-            $message->delete();
+            DB::table('messages')->delete();
         })->everyMinute();
     }
 
