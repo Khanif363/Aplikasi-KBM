@@ -3,6 +3,7 @@
 namespace App\Console;
 
 use App\Models\Alpha;
+use App\Models\Jadwal;
 use App\Models\Message;
 use App\Models\Potongan;
 use Illuminate\Console\Scheduling\Schedule;
