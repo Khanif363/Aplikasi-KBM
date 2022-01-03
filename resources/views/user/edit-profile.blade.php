@@ -37,7 +37,7 @@
           <div class="form-group">
             <label for="date">Kelas</label>
             <select name="kelas" class="form-control" type="text">
-              <option>{{ Auth::user()->kelas }}</option>
+              <option value="{{ Auth::user()->kelas }}"></option>
               @foreach ($kelas as $kelass)
               <option value="{{ $kelass->id }}" >{{ $kelass->kelas }}</option>                                                                                                                       
               @endforeach
