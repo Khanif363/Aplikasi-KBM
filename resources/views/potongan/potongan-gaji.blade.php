@@ -40,12 +40,14 @@
                                    $i = 1;
                                  @endphp
                                  @foreach ($potongan as $potongans)
+                                   
+                                 
                                    <tr>
                                         <td>{{ $i++ }}</td>
                                         <td>{{ $potongans->user->name }}</td>
                                         <td>{{ number_format($potongans->gaji, 0, ',', '.') }}</td>
                                         <td>{{ number_format($potongans->potongan, 0, ',', '.') }}</td>
-                                        <td>{{ number_format($potongans->gaji, 0, ',', '.') - number_format($potongans->potongan, 0, ',', '.') }}</td>
+                                        <td>{{ $potongans->gaji - $potongans->potongan }}</td>
                                    </tr>
                                    @endforeach
                                </tbody>
