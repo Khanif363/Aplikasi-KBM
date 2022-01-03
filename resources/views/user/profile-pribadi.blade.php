@@ -61,7 +61,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <p class="m-b-10 f-w-600">Tanggal</p>
-                                        <h6 class="text-muted f-w-400">{{ Auth::user()->tanggal_lahir->format('dddd, D MMMM Y')}}</h6>
+                                        <h6 class="text-muted f-w-400">{{ Auth::user()->tanggal_lahir->translatedFormat('l, d F Y')}}</h6>
                                         {{-- format('dddd, D MMMM Y')}} --}}
                                     </div>
                                 </div>
