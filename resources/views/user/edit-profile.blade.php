@@ -36,8 +36,8 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
           <div class="form-group">
             <label for="date">Kelas</label>
-            <select name="kelas" aria-valuemax="{{ Auth::user()->kelas }}" class="form-control" type="text">
-              <option></option>
+            <select name="kelas" class="form-control" type="text">
+              <option value="">-- Pilih Kelas --</option>
               @foreach ($kelas as $kelass)
               <option value="{{ $kelass->id }}" >{{ $kelass->kelas }}</option>                                                                                                                       
               @endforeach
