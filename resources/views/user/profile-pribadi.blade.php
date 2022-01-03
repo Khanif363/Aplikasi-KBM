@@ -61,7 +61,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <p class="m-b-10 f-w-600">Tanggal</p>
-                                        <h6 class="text-muted f-w-400">{{ Auth::user()->tanggal_lahir->from_date->format('d/m/Y') }}</h6>
+                                        <h6 class="text-muted f-w-400">{{ Auth::user()->tanggal_lahir}}</h6>
                                     </div>
                                 </div>
                                 @if (Auth::user()->role == 'Guru')
