@@ -29,7 +29,7 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
           <div class="form-group">
             <label for="date">Tanggal Lahir</label>
-            <input name="tanggal_lahir" type="date" class="form-control" id="date" placeholder="yyyy-mm-dd" value="{{ Auth::user()->tanggal_lahir->format('dddd, D MMMM Y')}}">
+            <input name="tanggal_lahir" type="date" class="form-control" id="date" placeholder="yyyy-mm-dd" value="{{ Auth::user()->tanggal_lahir->->translatedFormat('l, d F Y')}}">
           </div>
         </div>
         @if (Auth::user()->role == 'Siswa')
