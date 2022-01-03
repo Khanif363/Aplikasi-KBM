@@ -29,9 +29,7 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
           <div class="form-group">
             <label for="date">Tanggal Lahir</label>
-            <input name="tanggal_lahir" type="date" class="form-control" id="date" placeholder="yyyy-mm-dd" value=" @if (Auth::user()->tanggal_lahir != '')
-            {{ Auth::user()->tanggal_lahir }}
-            @endif ">
+            <input name="tanggal_lahir" type="date" class="form-control" id="date" placeholder="yyyy-mm-dd" value="@if(Auth::user()->tanggal_lahir != ''){{ Auth::user()->tanggal_lahir }}@endif">
           </div>
         </div>
         @if (Auth::user()->role == 'Siswa')
@@ -39,9 +37,7 @@
           <div class="form-group">
             <label for="date">Kelas</label>
             <select name="kelas" class="form-control" type="text">
-              <option value="@if (Auth::user()->kelas != '')
-                {{ Auth::user()->kelas }}
-                @endif">-- Pilih Kelas --</option>
+              <option value="@if(Auth::user()->kelas != ''){{ Auth::user()->kelas }}@endif">-- Pilih Kelas --</option>
               @foreach ($kelas as $kelass)
               <option value="{{ $kelass->id }}" >{{ $kelass->kelas }}</option>                                                                                                                       
               @endforeach
@@ -52,9 +48,7 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
           <div class="form-group">
             <label for="adress">Alamat</label>
-            <input name="address" type="text" class="form-control" id="address" placeholder="Masukkan Alamat" value="@if (Auth::user()->address != '')
-            {{ Auth::user()->address }}
-            @endif">
+            <input name="address" type="text" class="form-control" id="address" placeholder="Masukkan Alamat" value="@if(Auth::user()->address != ''){{ Auth::user()->address }}@endif">
           </div>
         </div>
         {{-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -66,26 +60,20 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
           <div class="form-group">
             <label for="phone">Phone</label>
-            <input name="number_phone" type="text" class="form-control" id="phone" placeholder="Masukkan Nomor Telpon" value="@if (Auth::user()->number_phone != '')
-            {{ Auth::user()->number_phone }}
-            @endif">
+            <input name="number_phone" type="text" class="form-control" id="phone" placeholder="Masukkan Nomor Telpon" value="@if(Auth::user()->number_phone != ''){{ Auth::user()->number_phone }}@endif">
           </div>
         </div>
         @if (Auth::user()->role == 'Guru')
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
           <div class="form-group">
             <label>Mapel</label>
-            <input name="mapel" type="text" class="form-control"  placeholder="Masukkan Mapel" value="@if (Auth::user()->mapel != '')
-            {{ Auth::user()->mapel }}
-            @endif">
+            <input name="mapel" type="text" class="form-control"  placeholder="Masukkan Mapel" value="@if(Auth::user()->mapel != ''){{ Auth::user()->mapel }}@endif">
           </div>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
           <div class="form-group">
             <label>Pendidikan</label>
-            <input name="pendidikan" type="text" class="form-control"  placeholder="Masukkan Status Pendidikan" value="@if (Auth::user()->pendidikan != '')
-            {{ Auth::user()->pendidikan }}
-            @endif">
+            <input name="pendidikan" type="text" class="form-control"  placeholder="Masukkan Status Pendidikan" value="@if(Auth::user()->pendidikan != ''){{ Auth::user()->pendidikan }}@endif">
           </div>
         </div>
         @endif
