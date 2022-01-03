@@ -29,6 +29,7 @@ class User extends Authenticatable
     //     'password',
     // ];
     protected $guarded = [];
+    protected $dates = ['tanggal_lahir'];
 
     /**
      * The attributes that should be hidden for serialization.
@@ -74,10 +75,10 @@ class User extends Authenticatable
         return $this->hasOne(Potongan::class);
     }
 
-    public function getCreatedAtAttribute()
-    {
-        return Carbon::parse($this->attributes['tanggal_lahir'])
-        ->translatedFormat('l, d F Y');
-    }
+    // public function getCreatedAtAttribute()
+    // {
+    //     return Carbon::parse($this->attributes['tanggal_lahir'])
+    //     ->translatedFormat('l, d F Y');
+    // }
 
 }
