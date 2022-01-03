@@ -75,10 +75,10 @@ class User extends Authenticatable
         return $this->hasOne(Potongan::class);
     }
 
-    public function getCreatedAtAttribute()
-    {
-        return Carbon::parse($this->attributes['tanggal_lahir'])
-        ->translatedFormat('l, d F Y');
-    }
+    // public function getCreatedAtAttribute()
+    // {
+    //     return Carbon::parse($this->attributes['tanggal_lahir'])
+    //     ->translatedFormat('l, d F Y');
+    // }
 
 }
