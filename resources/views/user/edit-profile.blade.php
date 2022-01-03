@@ -37,7 +37,7 @@
           <div class="form-group">
             <label for="date">Kelas</label>
             <select name="kelas" class="form-control" type="text">
-              <option>@if(Auth::user()->kelas != ''){{ Auth::user()->kelas }}@else-- Pilih Kelas --@endif</option>
+              <option>{{ Auth::user()->kelas }}</option>
               @foreach ($kelas as $kelass)
               <option value="{{ $kelass->id }}" >{{ $kelass->kelas }}</option>                                                                                                                       
               @endforeach
