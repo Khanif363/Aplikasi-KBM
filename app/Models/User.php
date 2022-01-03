@@ -76,9 +76,9 @@ class User extends Authenticatable
     }
 
     public function getCreatedAtAttribute()
-    {
-        return Carbon::parse($this->attributes['tanggal_lahir'])
-        ->translatedFormat('l, d F Y');
-    }
+    // {
+    //     return Carbon::parse($this->attributes['tanggal_lahir'])
+    //     ->translatedFormat('l, d F Y');
+    // }
 
 }
