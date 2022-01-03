@@ -7,6 +7,7 @@ use App\Models\Kelas;
 use App\Models\Mapel;
 use App\Models\Jadwal;
 use App\Models\Potongan;
+use Illuminate\Support\Carbon;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -71,6 +72,12 @@ class User extends Authenticatable
     public function potongan()
     {
         return $this->hasOne(Potongan::class);
+    }
+
+    public function getCreatedAtAttribute()
+    {
+        return Carbon::parse($this->attributes['tanggal_lahir'])
+        ->translatedFormat('1, d F Y');
     }
 
 }
