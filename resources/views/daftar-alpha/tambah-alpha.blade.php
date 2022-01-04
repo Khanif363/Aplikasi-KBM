@@ -2,7 +2,7 @@
 @section('content')
 <div class="row container mt-5 mb-5 justify-content-center align-items-center">
     <div class="form">
-        <form action="/tambah" method="POST">
+        <form action="/tambah/alpha" method="POST">
         @csrf
         @if ($message = Session::get('Success'))
             <div class="alert alert-success alert-block">

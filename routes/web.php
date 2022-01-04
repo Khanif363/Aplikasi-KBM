@@ -50,6 +50,7 @@ Route::get('tambah-potongan',[GuruController::class,'tambahpotongan'])->middlewa
 Route::post('/potong',[GuruController::class,'potong'])->middleware('auth');
 Route::get('tambah/jadwal', [JadwalMapelController::class,'tambahJadwal'])->middleware('auth');
 Route::get('tambah/alpha', [AlphaController::class,'tambahAlpha'])->middleware('auth');
+Route::post('tambah/alpha', [AlphaController::class,'tambah'])->middleware('auth');
 Route::get('/peraturan', [JadwalMapelController::class,'peraturan'])->name('peraturan')->middleware('auth');
 Route::get('/edit-peraturan/{id}', [JadwalMapelController::class,'edit'])->middleware('auth');
 // Route::get('/edit-peraturan', function () {
