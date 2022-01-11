@@ -19,12 +19,12 @@ class CreateUsersTable extends Migration
             $table->foreignId('kelas_id')->nullable();
             $table->string('name')->nullable();
             $table->date('tanggal_lahir')->nullable();
-            $table->integer('nisn')->nullable();
+            $table->integer('nisn')->unique();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable();
             $table->string('address')->nullable();
-            $table->string('number_phone')->nullable();
+            $table->string('number_phone')->unique();
             $table->text('image')->nullable();
             $table->string('mapel')->nullable();
             $table->string('pendidikan')->nullable();
