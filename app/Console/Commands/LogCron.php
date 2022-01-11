@@ -38,7 +38,7 @@ class LogCron extends Command
      */
     public function handle()
     {
-        Message::all()->delete();
-        // return 0;
+        // Message::all()->delete();
+        // // return 0;
     }
 }

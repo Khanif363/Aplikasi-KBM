@@ -54,8 +54,8 @@ class Kernel extends ConsoleKernel
         //     $peraturan->delete();
         // })->everyMinute();
         
-        $schedule->command('log:cron')
-                 ->everyMinute();
+        // $schedule->command('log:cron')
+        //          ->everyMinute();
     }
 
     /**
