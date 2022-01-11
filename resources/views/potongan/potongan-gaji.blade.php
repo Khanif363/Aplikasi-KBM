@@ -47,7 +47,7 @@
                                         <td>{{ $potongans->user->name }}</td>
                                         <td>{{ number_format($potongans->gaji, 0, ',', '.') }}</td>
                                         <td>{{ number_format($potongans->potongan, 0, ',', '.') }}</td>
-                                        <td>{{ $potongans->gaji - $potongans->potongan }}</td>
+                                        <td>{{ number_format($potongans->gaji - $potongans->potongan, 0, ',', '.') }}</td>
                                    </tr>
                                    @endforeach
                                </tbody>
