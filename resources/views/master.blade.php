@@ -123,7 +123,7 @@
 		.input {
 		background-color: white;
 		border-radius: 12px;
-		box-sizing: border-box; 
+		box-sizing: border-box;
 		border: 0;
 		/* color: rgb(41, 39, 39); */
 		font-size: 18px;
@@ -378,7 +378,7 @@
         overflow-x: hidden;
     }
 	/* END PROFILE MURID */
-	
+
 	.bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -414,7 +414,7 @@
     float:left;
 }
 .circle li{
-    margin: 1.5em 0;    
+    margin: 1.5em 0;
 }
 .circle li:before{
     content: counter(list-counter);
@@ -431,7 +431,7 @@
     font-weight: bold;
     text-align: center;
     display: inline-block; */
-    
+
 }
 	.set{
 		margin-left: 0 !important;
@@ -474,8 +474,8 @@
     position: relative;
 	margin-left: 0;
 	margin-right: 0;
-    height: 100%; */
-}
+    height: 100%;
+} */
 .account-settings .user-profile {
     margin: 0 0 1rem 0;
     padding-bottom: 1rem;
@@ -538,7 +538,7 @@
 
 	<div class="wrapper">
 		@include('landing.navbar')
-	
+
 	<div class="main-panel">
 		<div class="content customecolor">
 	@yield('content')
